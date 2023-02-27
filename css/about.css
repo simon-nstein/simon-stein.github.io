@@ -453,7 +453,7 @@ li:not(:last-child) {
     font-family: 'Montserrat', sans-serif;
 }
 
-#quoteDescription{
+.quoteDescription{
   color: rgb(102,102,102);
   width: 71%;
   margin: auto;
