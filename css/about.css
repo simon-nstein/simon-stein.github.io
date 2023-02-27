@@ -453,6 +453,7 @@ li:not(:last-child) {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*
 .quote{
   font-family: 'Montserrat', sans-serif;
   text-align: center
@@ -465,7 +466,7 @@ li:not(:last-child) {
   margin: auto;
 }
 
-/*
+
 @media (max-width: 900px) {
   .quoteDescription {
       width: 100%;
