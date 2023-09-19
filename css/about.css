@@ -11,12 +11,22 @@ html {
 .options{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1.3vw;
+    /*font-size: 1.3vw;*/
+    font-size: 18px;
     display: flex;
     gap: 25px;
     margin-left: auto;
     color: #333237;
     align-items: center;
+}
+
+.about-work{
+  display: block;
+}
+
+.content-div{
+  width: 75%;
+  margin: auto;
 }
 
 .contact-box{
@@ -97,7 +107,8 @@ html {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     max-width: 90%;
-    font-size: 2vw;
+    /*font-size: 2vw;*/
+    font-size: 27px;
     color: #333237;
 }
 
@@ -567,12 +578,14 @@ li:not(:last-child) {
     /* make the image move down inside the object fit so it's not just my teeth showing */
   }
   .statmentMain{
-    font-size: 3.3vw;
+    /*font-size: 3.3vw;*/
+    font-size: 22px;
     max-width: 100%;
     margin-top: 15px;
   }
   .statmentSecond{
-    font-size: 2.5vw;
+    /*font-size: 2.5vw;*/
+    font-size: 18px;
     max-width: 100%;
   }
   .connect_button{
@@ -580,6 +593,7 @@ li:not(:last-child) {
     margin: auto;
     margin-top: 30px;
   }
+
   .port{
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -602,10 +616,16 @@ li:not(:last-child) {
     font-size: 13px;
   }
   .name{
-    font-size: 3vw;
+    /*font-size: 3vw;*/
+    font-size: 22px;
   }
   .options{
-    font-size: 2.4vw;
+    /*font-size: 2.4vw;*/
+    font-size: 18px;
   }
+  .about-work{
+    display: none;
+  }
+
 
 }
