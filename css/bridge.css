@@ -1,0 +1,83 @@
+.back-nav{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid rgb(219 221 228);
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 0px 40px 0px 40px;
+  }
+
+.nav-name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    max-width: 90%;
+    font-size: 2vw;
+    color: #333237;
+    margin-left: auto;
+}
+
+.back-button{
+    font-size: 2.5vw;
+    color: black;
+}
+
+.main-div{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    width: 75%;
+    margin: auto;
+    gap: 4vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vw;
+}
+
+.image{
+    width: 30vw;
+}
+
+.bridge-logo{
+    display: none;
+    width: 100%;
+}
+
+.bold{
+    font-weight: 600;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.heading{
+    font-weight: 600;
+    font-size: 1.7vw;
+    margin: 0;
+
+}
+
+@media (max-width: 800px) {
+    .main-div{
+        flex-direction: column;
+        font-size: 2.2vw;
+    }
+    .image{
+        order: 2;
+        width: 100%;
+    }
+    .bold{
+        font-size: 3.9vw;
+    }
+    .heading{
+        font-size: 3.5vw;
+    }
+    .bridge-logo{
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+    #logo{
+        display: none;
+    }
+}

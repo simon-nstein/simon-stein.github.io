@@ -1,81 +1,126 @@
 html {
     scroll-behavior: smooth;
   }
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.options{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.3vw;
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    color: #333237;
+    align-items: center;
+}
+
+.contact-box{
+  background-color: #212121;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: auto;
+  text-decoration: none;
+}
   
-.statments{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+.statmentMain{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /*font-size: 33px;*/
+    font-size: 2.3vw;
     max-width: 90%;
     word-wrap: break-word;
     flex-wrap: wrap;
-    color: rgb(102,102,102);
     margin-bottom: 0px;
+    margin-top: 0;
+    color: #333237;
 }
 
-@media (max-width: 1240px) {
-    .statments {
-        font-size: 19px;
-    }
-  }
+.statmentSecond{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  /*font-size: 21px;*/
+  font-size: 1.7vw;
+  max-width: 90%;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  color: rgb(102,102,102);
+  margin-bottom: 0px;
+}
 
-  @media (max-width: 1130px) {
-    .statments {
-        font-size: 17px;
-    }
-  }
+.work-heading{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: #333237;
+  text-align: center;
+  font-weight: 1000;
 
-@media (max-width: 640px) {
-    .statments {
-        max-width: none;
-        margin: 0 auto;
-    }
-  }
+}
+
+.port{
+  display: grid;
+  gap: 6rem;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.indvItems{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.job-company{
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #212121;
+}
+
+.job-title{
+  font-size: 21px;
+  margin-top: 7px;
+  font-weight: 300;
+  color: #212121;
+}
+
 
 .name{
-    margin-top: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     max-width: 90%;
-    font-size: 37px;
+    font-size: 2vw;
+    color: #333237;
 }
 
 .picture{
-    width: 500px;
-    height: 500px;
+    width: 31vw;
+    /*height: 31vw;*/
     object-fit: cover;
     border-radius: 22px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    order: 2;
 }
 
-@media (max-width: 1040px) {
-    .picture {
-        display: none;
-    }
-  }
-
-@media (max-width: 640px) {
-    .picture {
-        width: 150px;
-        height: 150px;
-    }
-}
-
-#nav{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    margin-bottom: 70px;
-    position: sticky;
-    top: 0;
-    justify-content: space-evenly;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: white;
-    border-bottom: 1px solid rgb(219 221 228);
-    z-index: 200;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-
+.nav{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid rgb(219 221 228);
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  padding: 0px 40px 0px 40px;
 }
 
 .navs {
@@ -112,7 +157,7 @@ html {
     display: flex;
     flex-direction: column;
     margin: auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-top: 20px;
     padding-top: 38px;
     margin-bottom: 40px;
@@ -125,7 +170,7 @@ html {
     border-radius: 17px;
     padding: 22px;
     border: 1px solid rgb(218 221 228);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
 }
 
@@ -182,25 +227,10 @@ html {
     font-weight: bold;
 }
 
-
-.infoP, .contactRows{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .linkedinGithub{
     color: rgb(52,120,177);
     font-size: 40px;
     margin-top: -7px;
-}
-
-.contactRows{
-    display: flex;
-    flex-direction: row;
-    margin-right: 2%;
-    margin-top: 2%;
-    gap: 1em;
 }
 
 .inivid{
@@ -213,7 +243,7 @@ html {
     padding: 14px;
     min-width: 500px;
     border-radius: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: left;
     border: 1px solid rgb(218 221 228);
     background-image: linear-gradient(to bottom, #dbdde4 20%, #f4f6fe 20%);
@@ -249,13 +279,22 @@ li:not(:last-child) {
   .connect_button {
     text-decoration: none;
     background-color: #436f9e;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #ffffff;
-    line-height: 16px;
-    position: relative;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 15px;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    /*font-size: 24px;*/
+    font-size: 1.5vw;
+  }
+
+  .ln-logo{
+    width: 10px;
+    height: 10px;
   }
 
   .connect_button:hover {
@@ -274,15 +313,7 @@ li:not(:last-child) {
   .connect_button i {
     font-size: 1.5em;
     line-height: 1.8em;
-    width: 50px;
-    position: absolute;
-    left: 0;
-  }
 
-  @media (max-width: 800px) {
-    .connect_button {
-        width: 90%;
-    }
   }
 
   .circlePhoto {
@@ -304,39 +335,6 @@ li:not(:last-child) {
       transform: translateY(-10px);
     }
   }
-
-  .contactMainDiv{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 100px;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .contactBox{
-    display: flex;
-    flex-direction: column;
-    width: 630px;
-    margin: auto;
-    font-weight: bold;
-    background: rgb(244 246 254);
-    border-radius: 10px;
-    border: 1px solid rgb(218 221 228);
-  }
-
-  @media (max-width: 800px) {
-    .contactBox {
-        width: 80vw;
-    }
-  }
-
-  .contactName{
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 0;
-    margin-top: 12px;
-  }
-
   .headerSmallRight{
     text-align: center;
     margin-bottom: 0px;
@@ -386,7 +384,7 @@ li:not(:last-child) {
   z-index: 100;
   background: rgb(243,246,254);
   border: 1px solid rgb(218 221 228);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-radius: 10px;
 }
 
@@ -424,7 +422,7 @@ li:not(:last-child) {
     flex-direction: row;
     justify-content: space-around;
     /*flex-flow: wrap;*/
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     gap: 60px;
 }
 
@@ -450,12 +448,12 @@ li:not(:last-child) {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 .quote{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center
 }
 
@@ -513,4 +511,101 @@ li:not(:last-child) {
 }
 .portfolioIndividualDivs:nth-child(3){
   transition-delay: 400ms;
+}
+
+.resume{
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.contact{
+  background-color: #212121;
+  color: #F8F7FC;
+  font-family: 'Poppins', sans-serif;
+  /*font-size: 1.4vw;*/
+  font-size: 21px;
+  width: 100%;
+  padding: 25px 0px;
+}
+
+.info{
+  width: 75%;
+  margin: auto;
+}
+
+.get-in-contact{
+  font-weight: 500;
+  margin-top: 0;
+  margin: 0;
+}
+
+.contact-text{
+  font-weight: 300;
+  margin: 7px 0px 7px 0px;
+  width: 30%;
+}
+
+.email-text{
+  font-weight: 500;
+  margin: 0;
+}
+
+.companyIMG{
+  width: 100%;
+  border-radius: 13px;
+}
+
+@media (max-width: 800px) {
+  .intro {
+    flex-direction: column;
+  }
+  .picture{
+    order: 0;
+    width: 100%;
+    height: 51vw;
+    object-position: top;
+    /* make the image move down inside the object fit so it's not just my teeth showing */
+  }
+  .statmentMain{
+    font-size: 3.3vw;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .statmentSecond{
+    font-size: 2.5vw;
+    max-width: 100%;
+  }
+  .connect_button{
+    font-size: 2.5vw;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .port{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .indvItems{
+    width: 90%;
+    margin: auto;
+  }
+  .work-heading{
+    margin-bottom: 10px;
+  }
+  .job-company{
+    margin-top: 10px;
+    /* should be more bold too*/
+  }
+  .contact-text{
+    width: 100%;
+  }
+  .contact{
+    font-size: 13px;
+  }
+  .name{
+    font-size: 3vw;
+  }
+  .options{
+    font-size: 2.4vw;
+  }
+
 }

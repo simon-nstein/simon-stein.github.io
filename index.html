@@ -11,256 +11,80 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@139;206;387&display=swap" rel="stylesheet">
 
+  <!--POPPINS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-
-  <script>
-    function slide(direction){
-      var container = document.getElementById('container');
-      scrollCompleted = 0;
-      var slideVar = setInterval(function(){
-          if(direction == 'left'){
-              container.scrollLeft -= 100;
-          } else {
-              container.scrollLeft += 100;
-          }
-          scrollCompleted += 100;
-          if(scrollCompleted >= 500){
-              window.clearInterval(slideVar);
-          }
-      }, 50);
-  }
-  </script>
 </head>
-<body style="display: flex;">
-    <div style="display: flex; flex-direction: column;">
-        <div id="nav">
-            <a class="navs" href="#about">About</a>
-            <a class="navs" href="#experience">Experience</a>
-            <a class="navs" href="#portfolio">Portfolio</a>
-            <a class="navs" href="#contact">Contact</a>
-        </div>
 
-        <div style="margin-left: 12%; margin-right: 12%; scroll-behavior: smooth;">
-            <!--About-->
-            <section id="about" style="display: flex;flex-direction: row; margin: auto;">
-                <div style="display: flex;flex-direction: column;">
-                    <h1 class="name">Hi, I'm Simon Stein</h1>
-                    <p class="statments"> I'm an emerging product manager passionate about the intersection of health, wellness, and technology. My life's mission is to develop products and services to empower us all to be our best selves - mind, body, and spirit.</p>
-                    <p class="statments">When I'm not at my computer, I'm on the field playing soccer or at the gym training athletes and people of all ages to achieve peak fitness.</p>
-                </div>
-                <img class="picture" src="images/pic.webp">
-            </section>
-
-            <section id="experience" class="sectionHeader">
-                <p class="sectionName">Experience</p>
-                <p class="headerSmallRight"><a style="text-decoration: none; color: #666667;" href = 'resume.pdf' target="_blank">Download Resume</a></p>
-            </section>
-        </div>
-
-        <!--Experience - Carousel-->
-        <section class="carouselSect hidden" id="experience">
-            <div class="swiper mySwiper container">
-                <div class="swiper-wrapper content">
-
-                <!--#1-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                    <div style="display: flex; flex-direction: row; margin-top: 11px; margin-right: auto;">
-                        <img class="logo" src="images/bridge_logo.png">
-                        <div style="display: flex; flex-direction: column;">
-                            <p style="margin: 0; font-weight: bold;">Software Engineer Intern</p>
-                            <p style="margin: 0;margin-bottom: 3px;margin-top: 2px;">BridgeAthletic, Remote</p>
-                            <p style="margin: 0; font-style: italic;">June - September 2022</p>
-                        </div>
-                    </div>
-                    <ul style="margin-top: 38px;">
-                        <li>Developed Full Stack web referral system to promote company sales.</li>
-                        <li>Utilized AngularJs, JavaScript, and HTML to create a UI for customers to view unique invite links and share it via social networks.</li>
-                        <li>Created and implemented APIs and Webhooks to: create and modify MySql databases; send emails to customers; process referral payments.</li>
-                        <li>Interacted directly with Marketing and Design teams to improve the product.</li>
-                    </ul>
-                    </div>
-                </div>
-
-                <!--#2-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div style="display: flex; flex-direction: row; margin-top: 11px; margin-right: auto;">
-                            <img class="logo" src="images/Ofit-logo.png">
-                            <div style="display: flex; flex-direction: column;">
-                                <p style="margin: 0; font-weight: bold;">Personal Trainer & Digital Tech Instructor</p>
-                                <p style="margin: 0;margin-bottom: 3px;margin-top: 2px;">Orinda Fitness</p>
-                                <p style="margin: 0; font-style: italic;">March 2020 - August 2022</p>
-                            </div>
-                        </div>
-                        <ul style="margin-top: 38px;">
-                            <li>Trained individuals and athletes (professional as well as high school and college level) of all ages and provided strength training, balance and stability, and neurological conditioning. </li>
-                            <li>Designed custom workout plans tailored to client needs and goals.</li>
-                            <li>Lead in person and remote training programs customized for small groups.</li>
-                            <li>Introduced new neurological technology fitness tools to clients.</li>
-                            <li>Instructed other personal trainers to integrate digital technology tools including fitlights, blazepods, and VIMA lenses and frames.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!--#3-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div style="display: flex; flex-direction: row; margin-top: 11px; margin-right: auto;">
-                            <img class="logo" src="images/axon-logo.png">
-                            <div style="display: flex; flex-direction: column;">
-                                <p style="margin: 0; font-weight: bold;">Marketing Coordinator</p>
-                                <p style="margin: 0;margin-bottom: 3px;margin-top: 2px;">Axon Fitness</p>
-                                <p style="margin: 0; font-style: italic;">March 2020 - August 2021</p>
-                            </div>
-                        </div>
-                        <ul style="margin-top: 38px;">
-                            <li>Partnered with gym owner to support marketing and sales for a locally owned small business; enabled revenue growth by 20%.</li>
-                            <li>Assisted in reimagining the brand and conducting outreach to new market segments with marketing strategy and campaign that included customer research, ad design, social media marketing, and remodeling of the physical space.</li>
-                            <li>Created digital marketing advertisements for a GoFundMe campaign that raised $31K during the pandemic.</li>
-                            </ul>
-                    </div>
-                </div>
-
-                <!--#4-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div style="display: flex; flex-direction: row; margin-top: 11px; margin-right: auto;">
-                            <img class="logo" src="images/lamo_logo.png">
-                            <div style="display: flex; flex-direction: column;">
-                                <p style="margin: 0; font-weight: bold;">USSF Grassroots Referee</p>
-                                <p style="margin: 0;margin-bottom: 3px;margin-top: 2px;">Lamorinda Soccer Club</p>
-                                <p style="margin: 0; font-style: italic;">August 2016 - January 2020</p>
-                            </div>
-                        </div>
-                        <ul style="margin-top: 38px;">
-                            <li>Oversaw 30 competitive games annually for youth ages 7-18.</li>
-                            <li>Collaborated closely with other assistant or main referees, enforced fair play, monitored player safety, managed conflict resolution, assessed risk factors, and provided game report to league officials.</li>
-                            </ul>
-                    </div>
-                </div>
-                
-                <!--#5-->
-                <div class="swiper-slide card">
-                    <div class="card-content">
-                        <div style="display: flex; flex-direction: row; margin-top: 11px; margin-right: auto;">
-                            <img class="logo" src="images/Galileo-logo.png">
-                            <div style="display: flex; flex-direction: column;">
-                                <p style="margin: 0; font-weight: bold;">Camp Counselor</p>
-                                <p style="margin: 0;margin-bottom: 3px;margin-top: 2px;">Galileo Innovation Camps</p>
-                                <p style="margin: 0; font-style: italic;">June - September 2019</p>
-                            </div>
-                        </div>
-                        <ul style="margin-top: 38px;">
-                            <li>Managed logistics at an award winning innovation and design Summer Camp for youth ages 8-12.</li>
-                            <li>Trained in the Galileo Innovation Approach; organized and led classroom and innovation lab based activities using a unique design thinking curriculum tailored for youth</li>
-                            </ul>
-                    </div>
-                </div>
-        
-                </div>
+<body>
+    <div id="nav"></div>
+    <div class="nav">
+            <p class="name">SIMON NEUWIRTH-STEIN</p>
+            <div class="options">
+                <a href="#nav" style="color: black; text-decoration: none;">ABOUT</a>
+                <a href="#work" style="color: black; text-decoration: none;">MY WORK</a>
+                <a href="./resume.pdf" target="_blank" class="contact-box"><p style="color: white; margin: 0;">DOWNLOAD CV</p></a>
             </div>
-        
-            <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-        </section>
-
-        <!--Skills-->
-        <div style="margin-left: 12%; margin-right: 12%; scroll-behavior: smooth;">
-            <p class="skillsHeader" style="margin-top: 0; margin-bottom: 10px;">Skills</p>
-            <div class="skillsBox">
-
-                <div class="skills hidden">
-                    <p class="skillName">Software Development</p>
-                    <p>With a passion for creating efficient software solutions, I constantly push myself to learn new programming languages and technologies, in order to bring a fresh perspective to any development project.</p>
-                </div>
-        
-                <div class="skills hidden">
-                    <p class="skillName">Collaboration</p>
-                    <p>As a dedicated team player, I value the importance of communication and have experience collaborating with colleagues from diverse backgrounds and locations, ensuring a successful team effort.</p>
-                </div>
-        
-                <div class="skills hidden">
-                    <p class="skillName">Work Ethic</p>
-                    <p>I take pride in my strong discipline and work ethic, honed through years of experience as a competitive collegiate soccer player, and apply it to every project I work on, ensuring high-quality results and efficient  completion.</p>
-                </div>
-            </div>
-
-            <div class="hidden quote">
-                <p style="font-weight: bold; font-size: 33px; color: #416c9b;">"Stay Hungry. Stay Foolish"</p>
-                <p class="quoteDescription">This saying speaks to my eagerness to continuously learn, improve, and succeed, no matter what challenges or setbacks I may face. Whether I'm pursuing a new goal or tackling a difficult project, I always try to maintain a sense of curiosity and wonder that keeps me motivated and engaged. By staying hungry and foolish, I'm always able to overcome my doubts and build software that is truly meaningful. Looking ahead, I'm excited to see where this mindset takes me next, and I'm committed to continuing to push myself to grow and learn.</p>
-            </div>
-
-            <!--Portfolio-->
-            <section id="portfolio">
-                <div class="sectionHeader">
-                    <p class="sectionName">Portfolio</p>
-                    <p class="headerSmallRight"><a style="text-decoration: none; color: black;" href="https://github.com/simon-nstein" target="_blank">View Github</a></p>
-                </div>
-            
-                <div style="display: flex;flex-direction: column; margin: auto;margin-top: 50px">
-
-                    <div class="portfolioIndividualDivs hidden">
-                        <div class="referralRow">
-                            <div style="display: flex; flex-direction: column;">
-                                <p class="portName">Referral Program - BridgeAthletic</p>
-                                <p class="portDescription">Developed a referral program to promote organic user growth and to create a stronger community of coaches using the platform.</p>
-                                <p><a href="https://intercom.help/bridgeathletic/en/articles/6551935-refer-a-friend" target="_blank" class="viewMore">View More</a></p>
-                            </div>
-                            <img class="referralIMG" src="images/referral2_50.png">
-                        </div>
-                    </div>
-
-                    <div class="rowPorts">
-                        <div class="portfolioIndividualDivs hidden" style="flex: 1;">
-                            <p class="portName">Sports Tweet API</p>
-                            <p class="portDescription">Basic webapp using NodeJs and the Twitter API to help find and promote sports related tweets using NodeJs & Twitter API.</p>
-                            <p><a href="https://github.com/simon-nstein/sports-tweet-api" target="_blank" class="viewMore">View More</a></p>
-                            <img style="width: 206px;object-fit: cover;margin: auto;margin-top: 0px;" src="images/twitIMG.png">
-                        </div>
-        
-                        <div class="portfolioIndividualDivs hidden" style="flex: 1;">
-                            <p class="portName">Premier League Soccer Visualization</p>
-                            <p class="portDescription">Visualizing the 2015-2016 Premier League Season with a scatterplot using Pandas and Seaborn.</p>
-                            <p><a href="https://simonstein18.github.io/DSproj/" target="_blank" class="viewMore">View More</a></p>
-                            <img style="width: 232px;object-fit: cover;margin: auto;margin-top: 0px;" src="images/premGraph.png">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Contact-->
-            <section id="contact" class="contactMainDiv">
-                <p style=" font-weight: bold; font-size: 40px; margin-top: 200px; margin-bottom: 72px;">Let's Connect</p>
-                <div class="contactBox hidden">
-                    <img class="circlePhoto" src="images/pic.webp">
-                    <p class="contactName">Simon Stein</p>
-                    <p style="font-size: 15px;">Thanks for visiting! Send a connection request on LinkedIn or send me an email! </p>
-                    <a href="https://www.linkedin.com/in/simon-stein/" class="connect_button"><i class="fab fa-linkedin-in"></i><p>Connect on LinkedIn</p></a>
-                    <a id="email" style="margin-bottom: 48px;" class="connect_button"><p>simonneuwirth20@gmail.com</p></a>
-                </div>
-            </section>
-        </div>
-        
     </div>
+    
+    <div style="width: 75%; margin: auto;">
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+        <div class="intro">
+            <img class="picture" src="images/pic.webp">
 
-    <script>
-        const emailLink = document.getElementById('email');
-        emailLink.addEventListener('click', () => {
-        const emailText = 'simonneuwirth20@gmail.com';
-        navigator.clipboard.writeText(emailText)
-            .then(() => {
-            console.log('Text copied to clipboard');
-            })
-            .catch(err => {
-            console.error('Failed to copy text: ', err);
-            });
-        });
-    </script>
-</body>
+            <div style="display: flex;flex-direction: column;">
+                <p class="statmentMain">I'm an emerging product manager passionate about being at the intersection of engineering, design, and strategy.</p>
+                <p class="statmentSecond">My life's mission is to develop products and services to empower us all to be our best selves - mind, body, and spirit.</p>
+                
+                <a href="https://www.linkedin.com/in/simon-stein/" class="connect_button">
+                    <i class="fab fa-linkedin-in"></i>
+                    <p style="margin: 0;">Connect on LinkedIn</p>
+                </a>
+            </div>
+        </div>
+
+        <p id="work" class="work-heading">My Work</p>
+        <div class="port">
+
+            <a href="./kp.html" class="indvItems">
+                <img class="companyIMG" src="images/Group3.png">
+                <p class="job-company">Kaiser Permanente Digital Summer 23</p>
+                <p class="job-title">Digital Engineering Intern</p>
+            </a>
+
+            <a href="./bridge.html" class="indvItems">
+                <img class="companyIMG" src="images/Group4.png">
+                <p class="job-company">Kaiser Permanente Digital Summer 23</p>
+                <p class="job-title">Digital Engineering Intern</p>
+            </a>
+
+            <div class="indvItems">
+                <img class="companyIMG" src="images/pollthru-img.jpg">
+                <p class="job-company">pollthru.io</p>
+                <p class="job-title">Coming soon...</p>
+            </div>
+
+            <a href="./Levav.pdf" class="indvItems">
+                <img class="companyIMG" src="images/levav-img2.jpg">
+                <p class="job-company">Levav</p>
+                <p class="job-title">Connecting the mind, heart, and soul through journaling.</p>
+            </a>
+        </div>
+
+    </div>
+    <div class="contact">
+        <div class="info">
+            <p class="get-in-contact">Get in contact</p>
+            <p class="contact-text">Work inquiries, or just saying hi's can be sent to:</p>
+            <p class="email-text">simonneuwirth20@gmail.com</p>
+            <a href="https://www.linkedin.com/in/simon-stein/">
+                <i style="font-size: 32px; margin-top: 7px; color: white;"  class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
 </html>
