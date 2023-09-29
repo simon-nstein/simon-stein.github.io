@@ -26,7 +26,6 @@
 }
 
 .main-div{
-    display: flex;
     font-family: 'Poppins', sans-serif;
     width: 75%;
     margin: auto;
@@ -40,8 +39,10 @@
 }
 
 .bridge-logo{
-    display: none;
-    width: 100%;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .bold{
@@ -57,27 +58,29 @@
 
 }
 
-@media (max-width: 800px) {
-    .main-div{
-        flex-direction: column;
-        font-size: 2.2vw;
-    }
-    .image{
-        order: 2;
-        width: 100%;
-    }
-    .bold{
-        font-size: 3.9vw;
-    }
-    .heading{
-        font-size: 3.5vw;
-    }
-    .bridge-logo{
-        display: block;
-        margin: auto;
-        width: 60%;
-    }
-    #logo{
-        display: none;
-    }
-}
+.connect_button {
+    text-decoration: none;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    /*font-size: 24px;*/
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+  }
+
+  .connect_button:hover {
+    background-color: #232323;
+  }
+
+  .connect_button i {
+    font-size: 1.2em;
+    line-height: 1.8em;
+
+  }
